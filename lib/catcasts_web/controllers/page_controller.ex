@@ -2,6 +2,8 @@ defmodule CatcastsWeb.PageController do
   use CatcastsWeb, :controller
 
   def index(conn, _params) do
-    render conn, "index.html"
+    conn
+    |> put_flash(:info, "Isso é um teste")
+    |> render("index.html")
   end
 end

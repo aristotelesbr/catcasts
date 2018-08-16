@@ -15,5 +15,5 @@ config :catcasts, Catcasts.Repo,
   username: "postgres",
   password: "postgres",
   database: "catcasts_test",
-  hostname: "localhost",
+  hostname: "db",
   pool: Ecto.Adapters.SQL.Sandbox

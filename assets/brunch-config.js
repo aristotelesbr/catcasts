@@ -47,15 +47,16 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/vendor/]
+    },
+    sass: {
+      options: {
+        includePaths: [
+          'node_modules/foundation-sites/scss',
+        ]
+      }
     }
   },
-  sass: {
-    options: {
-      includePaths: [
-        'node_modules/foundation-sites/scss',
-      ]
-    }
-  },
+
   modules: {
     autoRequire: {
       "js/app.js": ["js/app"]
